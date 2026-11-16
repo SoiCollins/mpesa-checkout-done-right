@@ -1,0 +1,19 @@
+{
+  "name": "mpesa-checkout-done-right",
+  "version": "0.1.0",
+  "description": "Reference M-Pesa STK Push checkout that never double-credits, never trusts the browser and recovers lost callbacks. Includes a failure simulator the Daraja sandbox doesn't have.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/main.ts",
+    "demo": "node --disable-warning=ExperimentalWarning scripts/demo.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT"
+}
